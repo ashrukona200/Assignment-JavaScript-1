@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1-Calculator</title>
+</head>
+
+<body>
+    <!--THIS DIV IS AS MAIN CONTAINER OF THE CALCULATOR-->
+    <div>
+        <!--THIS FORM IS FOR TAKING INPUT FROM USER-->
+        <form action="action.js" id="FormForMyCalculator">
+
+            <!--THIS IS THE FIRST USER'S INPUT-->
+            First Number : <input type="text" name="input1" id="Input1">
+            <!--THIS IS THE SECOND USER'S INPUT-->
+            Second Number : <input type="text" name="input2" id="Input2">
+        </form>
+        
+        <!--THIS DIV FOR ALL OF THE OPERATORS FOR OPERATIONS-->
+        <div>
+            <!-- THIS LABEL FOR SHOWING ALL OF THE OPERATORS AS DROPDOWN FORMAT-->
+            <label for="Operators">Operators:</label>
+
+            <select name="operators" id="Operators">
+                <option value="select" selected>--Select An Operator--</option>
+                <option value="addition">+ (For addition)</option>
+                <option value="subtraction">- (For subtraction)</option>
+                <option value="multiplication">* (For multiplication)</option>
+                <option value="division">/ (For division)</option>
+                <option value="modulo">% (For getting reminder)</option>
+            </select>
+        </div>
+
+        <!--THIS INPUT TAG FOR ShOWING THE RESULT WHENEVER WE WILL CLICK ON THE ANSWER BUTTON-->
+        <input type="button" onclick="Calculation()" value="Answer " id="Result">
+
+
+        <div>
+            <!--IN THIS P TAG THE RESULT WILL BE SHOWN-->
+            <p id="Display"></p>
+        </div>
+    </div>
+
+    <!--LINKING THE JAVASCRIPT FILE WITH THE HTML FILE-->
+    <script src="action.js"></script>
+</body>
+
+</html>
